@@ -1,0 +1,20 @@
+compiler_info: MAKE
+compiler: auto
+
+# This Is a Generated YML File. EDIT THE SPECCIFIED FILES!
+
+# ------------------------------------------------------------------
+ build: auto 
+version: kw-cp-dox-64
+
+
+compiler_id: none
+
+language: c++, c, make, mingw, python, doxyconfig
+
+tables: table
+int_helds: json
+
+packager: oreo, hyphin, pip, sudo
+
+description: Compiler Generated Qualified-Id.

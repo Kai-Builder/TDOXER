@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/seymo/Desktop/TdDoxer/c/run.cpp
+iomanip
+-
+iostream
+-
+fstream
+-
+../libexec/documents
+C:/Users/seymo/Desktop/TdDoxer/libexec/documents
+
+C:/Users/seymo/Desktop/TdDoxer/libexec/documents
+fstream
+-
+iostream
+-
+windows.h
+-
+string
+-
+ostream
+-
+

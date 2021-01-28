@@ -1,0 +1,82 @@
+//
+// Created by seymo on 1/27/2021.
+//
+#ifndef __script
+
+#include <fstream>
+#include <iostream>
+#include <windows.h>
+#include <string>
+#include <ostream>
+
+
+
+#define __script
+
+#ifndef TDDOXER_DOCUMENTS_H
+
+#define print std::cout
+
+#define flush std::endl
+
+#define strchar std::string
+
+#define wait(sec) Sleep(sec * 1000)
+
+#define throws std::cerr
+
+#define in std::cin
+
+#define makefile std::ofstream
+
+#define TDDOXER_DOCUMENTS_H
+
+class YML_Object {
+public:
+    void append(const std::string file) {
+        makefile M;
+        M.open(file, std::ios::out);
+        if (!M) {
+            throws << "Failed To Find Appendable. (ERR:199:APP:F)" << flush;
+        }
+        else {
+            while (M) {
+                // On Found File
+                // If File **EMPTY** Continue
+                // Else
+                // DO NOT CONTINUE
+                if (true) {
+                    print
+                            << "Alright, I'm Parsing the File For you. I'm gonna Start writing Some Essential Build Thingies For you."
+                            << flush;
+                    wait(2);
+
+
+                    throws << "[COMPILERWARNING] Checked For Some GUI Libraries (Python TK). They Do Not Conflict."
+                           << flush;
+
+                    throws << "[COROERR] Checked For Python Libraries. Found None." << flush;
+
+                    throws << "[NOEXCEPT] WARNING: Ran Program In Linux Bash Once, Scanned Returned NULL." << flush;
+
+                    M << "compiler_info: MAKE\ncompiler: auto\n\n# This Is a Generated YML File. EDIT THE SPECCIFIED FILES!\n"
+                         "\n# ------------------------------------------------------------------"
+                         "\nbuild: auto\n\n\nversion: kw-cp-dox-64\n\n\ncompiler_id: none\n\nlanguage: c++, c, make, mingw, python, doxyconfig\n\ntables: table\nint_helds: json\n\npackager: oreo, hyphin, pip, sudo\n\ndescription: Compiler Generated Qualified-Id." << flush;
+
+
+                    M.close();
+                    print << "Alright Done" << flush;
+                }
+                else
+                    throws << "File Not Empty. Sorry!" << flush;
+                    break;
+            }
+        }
+    }
+};
+
+
+#endif //TDDOXER_DOCUMENTS_H
+
+
+#endif

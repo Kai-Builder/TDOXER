@@ -1,0 +1,4 @@
+C:/Users/seymo/Desktop/TdDoxer/cmake-build-rel/CMakeFiles/rebuild_cache.dir
+C:/Users/seymo/Desktop/TdDoxer/cmake-build-rel/CMakeFiles/gen.dir
+C:/Users/seymo/Desktop/TdDoxer/cmake-build-rel/CMakeFiles/edit_cache.dir
+C:/Users/seymo/Desktop/TdDoxer/cmake-build-rel/CMakeFiles/support.dir
