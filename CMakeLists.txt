@@ -11,3 +11,5 @@ add_executable(gen
 
 add_executable(support
         c/build.cpp)
+
+add_executable(new c/take.cc)

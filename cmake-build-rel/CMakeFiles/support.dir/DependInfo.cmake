@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/seymo/Desktop/TdDoxer/c/build.cpp" "C:/Users/seymo/Desktop/TdDoxer/cmake-build-rel/CMakeFiles/support.dir/c/build.cpp.obj"
+  "C:/Users/seymo/Desktop/TDOXER/c/build.cpp" "C:/Users/seymo/Desktop/TDOXER/cmake-build-rel/CMakeFiles/support.dir/c/build.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

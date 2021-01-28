@@ -55,4 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gen.dir/DependInfo.cmake"
   "CMakeFiles/support.dir/DependInfo.cmake"
+  "CMakeFiles/new.dir/DependInfo.cmake"
   )

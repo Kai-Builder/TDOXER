@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\TdDoxer.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\TdDoxer.dir/objects.a @CMakeFiles\TdDoxer.dir\objects1.rsp
-C:\MinGW\bin\g++.exe    -static -Wl,--whole-archive CMakeFiles\TdDoxer.dir/objects.a -Wl,--no-whole-archive  -o ..\bin\TdDoxer.exe -Wl,--out-implib,libTdDoxer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TdDoxer.dir\linklibs.rsp

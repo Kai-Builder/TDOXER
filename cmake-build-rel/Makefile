@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\seymo\Desktop\TdDoxer
+CMAKE_SOURCE_DIR = C:\Users\seymo\Desktop\TDOXER
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\seymo\Desktop\TdDoxer\cmake-build-rel
+CMAKE_BINARY_DIR = C:\Users\seymo\Desktop\TDOXER\cmake-build-rel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seymo\Desktop\TdDoxer\cmake-build-rel\CMakeFiles C:\Users\seymo\Desktop\TdDoxer\cmake-build-rel\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seymo\Desktop\TDOXER\cmake-build-rel\CMakeFiles C:\Users\seymo\Desktop\TDOXER\cmake-build-rel\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seymo\Desktop\TdDoxer\cmake-build-rel\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\seymo\Desktop\TDOXER\cmake-build-rel\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,19 @@ support: cmake_check_build_system
 support/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\support.dir\build.make CMakeFiles/support.dir/build
 .PHONY : support/fast
+
+#=============================================================================
+# Target rules for targets named new
+
+# Build rule for target.
+new: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new
+.PHONY : new
+
+# fast build rule for target.
+new/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new.dir\build.make CMakeFiles/new.dir/build
+.PHONY : new/fast
 
 c/build.obj: c/build.cpp.obj
 
@@ -209,6 +222,33 @@ c/run.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gen.dir\build.make CMakeFiles/gen.dir/c/run.cpp.s
 .PHONY : c/run.cpp.s
 
+c/take.obj: c/take.cc.obj
+
+.PHONY : c/take.obj
+
+# target to build an object file
+c/take.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new.dir\build.make CMakeFiles/new.dir/c/take.cc.obj
+.PHONY : c/take.cc.obj
+
+c/take.i: c/take.cc.i
+
+.PHONY : c/take.i
+
+# target to preprocess a source file
+c/take.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new.dir\build.make CMakeFiles/new.dir/c/take.cc.i
+.PHONY : c/take.cc.i
+
+c/take.s: c/take.cc.s
+
+.PHONY : c/take.s
+
+# target to generate assembly for a file
+c/take.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new.dir\build.make CMakeFiles/new.dir/c/take.cc.s
+.PHONY : c/take.cc.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +258,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... gen
+	@echo ... new
 	@echo ... support
 	@echo ... c/build.obj
 	@echo ... c/build.i
@@ -225,6 +266,9 @@ help:
 	@echo ... c/run.obj
 	@echo ... c/run.i
 	@echo ... c/run.s
+	@echo ... c/take.obj
+	@echo ... c/take.i
+	@echo ... c/take.s
 .PHONY : help
 
 
